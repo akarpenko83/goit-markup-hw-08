@@ -1,0 +1,33 @@
+.social {
+    @extend %list;
+    @include flex(flex, null, null, null, center, space-between);
+    width: 206px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.social__item {
+    width: 44px;
+    height: 44px;
+}
+
+.social__link {
+    @extend %link;
+    @include flex();
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    color: $iconPrimaryColor;
+    transition: color 250ms cubic-bezier($cubic), 
+    background-color 250ms cubic-bezier($cubic);
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        color: $bgdPrimaryColor;
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+}

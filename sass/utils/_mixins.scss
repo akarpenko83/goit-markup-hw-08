@@ -1,0 +1,23 @@
+@mixin font($fs: 14,
+    $fw: 400,
+    $lh: 1.2,
+    $ls: 0.03) {
+    font-size: $fs + px;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls + em;
+}
+
+@mixin flex($flx: flex,
+    $fd: row,
+    $fw: wrap,
+    $ac: normal,
+    $ai: center,
+    $jc: center) {
+    display: $flx;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+    align-content: $ac;
+    align-items: $ai;
+    justify-content: $jc;
+}

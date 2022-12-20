@@ -1,0 +1,35 @@
+%outline {
+    outline: 2px solid tomato;
+}
+
+%container {
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+%list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+%link {
+    text-decoration: none;
+    color: inherit;
+}
+%btn {
+        display: block;
+        text-align: center;
+        font-family: inherit;
+        border: 0px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+%visually-hidden {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
