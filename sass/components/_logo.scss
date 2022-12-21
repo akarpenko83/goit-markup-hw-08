@@ -1,3 +1,17 @@
 .logo {
+    font-family: 'Raleway', sans-serif;
+    @include font(26, 700, 1.19, null);
+    color: $logoPrimaryColor;
+    
+        &--accent {
+            color: $accentColor;
+        }
+    
+        &--inverse {
+            color: $logoInverseColor;
+        }
+
+}
+.logo__link {
 @extend %link;
 }

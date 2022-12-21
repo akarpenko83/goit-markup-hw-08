@@ -1,23 +1,21 @@
 .container {
     @extend %container;
     width: 100%;
-    // @extend %outline;
+// uncomment below line to see container borders
+    // @extend %outline; 
 }
     @media screen and (min-width: 480px) {
         .container {
             width: 450px;
         }
-        
     }
     @media screen and (min-width: 768px) {
         .container {
             width: 738px;
         }
-        
-    }
+            }
      @media screen and (min-width: 1200px) {
         .container {
             width: 1170px;
-        }
-        
+        }    
     }

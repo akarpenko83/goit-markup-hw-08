@@ -1,3 +1,29 @@
 .works {
     display: none;
 }
+@media screen and (min-width: 1200px) {
+.works {
+    display: flex;
+    padding-bottom: 94px;
+}
+}
+.works__list {
+    @extend %list;
+    @include flex (flex, null, null, null, null, space-between);
+    }
+.works__item {
+    position: relative;
+    }
+.works__label {
+    @include flex(flex, null, null, null, center, center);
+    @include font(14,700,1.14,0.03);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: $bgdPrimaryColor;
+    background-color: rgba(47, 48, 58, 0.8);
+    }

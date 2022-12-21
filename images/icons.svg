@@ -83,6 +83,9 @@ viewBox="0 0 25 32">
 <symbol id="icon-check" viewBox="0 0 42 32">
 <path d="M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 24 16">
+<path d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"/></path>
+</symbol> 
 </defs>
 </svg>
 

@@ -41,15 +41,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="container header__container">
         <div class="logo header__logo">
           <a
             class="logo__link"
             href="./index.html"
-          >
-            <span class="logo--accent">Web</span
-            >Studio</a
-          >
+            ><span class="logo logo--accent"
+              >Web</span
+            >
+            Studio
+          </a>
         </div>
         <nav class="site-nav">
           <ul class="nav__list">
@@ -74,7 +75,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts header__contacts">
+        <ul class="contacts">
           <li class="contacts__item">
             <a
               class="contacts__link"
@@ -87,9 +88,8 @@
               >
                 <use
                   href="./images/icons.svg#icon-envelope"
-                ></use>
-              </svg>
-              info@devstudio.com
+                ></use></svg
+              >info@devstudio.com
             </a>
           </li>
           <li class="contacts__item">
@@ -110,6 +110,13 @@
             >
           </li>
         </ul>
+        <div class="menu">
+          <svg width="24" height="16">
+            <use
+              href="./images/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </div>
       </div>
     </header>
     <main>
@@ -442,126 +449,131 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__contacts">
-          <div class="logo footer__logo">
-            <a
-              class="logo__link"
-              href="./index.html"
-            >
-              <span class="logo--accent">Web</span
-              ><span class="logo--inverse"
-                >Studio</span
+      <div class="container footer__container">
+        <div class="footer-tablet-wrap">
+          <div class="footer__wrap">
+            <div class="logo footer__logo">
+              <a
+                class="logo__link"
+                href="./index.html"
               >
-            </a>
+                <span class="logo--accent"
+                  >Web</span
+                ><span class="logo--inverse"
+                  >Studio</span
+                >
+              </a>
+            </div>
+            <address
+              class="address footer__address"
+            >
+              <ul class="address__list">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--white"
+                    href="https://goo.gl/maps/LDMniA5MoxQiVdcX9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки,
+                    26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    class="address__link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    class="address__link"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
           </div>
-          <address class="address">
-            <ul class="address__list">
-              <li class="address__item">
+          <div class="joinup footer__joinup">
+            <p class="joinup__title">
+              приєднуйтесь
+            </p>
+            <ul class="social joinup__social">
+              <li class="social__item">
                 <a
-                  class="address__link address__link--white"
-                  href="https://goo.gl/maps/LDMniA5MoxQiVdcX9"
+                  class="social__link joinup__link"
+                  href="https://www.instagram.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки,
-                  26</a
                 >
+                  <svg
+                    class="social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
+              <li class="social__item">
                 <a
-                  class="address__link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+                  class="social__link joinup__link"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
                 >
+                  <svg
+                    class="social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
+              <li class="social__item">
                 <a
-                  class="address__link"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+                  class="social__link joinup__link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
                 >
+                  <svg
+                    class="social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link joinup__link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg
+                    class="social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="joinup">
-          <p class="joinup__title">
-            приєднуйтесь
-          </p>
-          <ul class="social joinup__social">
-            <li class="social__item">
-              <a
-                class="social__link joinup__link"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg
-                  class="social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link joinup__link"
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg
-                  class="social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link joinup__link"
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg
-                  class="social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link joinup__link"
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg
-                  class="social__icon"
-                  width="20"
-                  height="20"
-                >
-                  <use
-                    href="./images/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form
           class="subscribe"
@@ -569,12 +581,12 @@
           novalidate
         >
           <label
-            for="e-mail"
+            for="email"
             class="subscribe__label"
             >Підпишіться на розсилку</label
           >
           <input
-            class="subscribe__email"
+            class="subscribe__input subscribe__input--tablets"
             type="email"
             name="e-mail"
             id="e-mail"
@@ -583,7 +595,7 @@
 
           <button
             type="submit"
-            class="subscribe__btn"
+            class="button subscribe__btn"
           >
             Підписатися
             <svg

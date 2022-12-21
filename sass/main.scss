@@ -4,11 +4,17 @@
 
 @import './base/common';
 
+
 @import './components/container';
+@import './components/site-nav';
+@import './components/contacts';
+@import './components/address';
 @import './components/logo';
 @import './components/section-title';
 @import './components/socials';
 @import './components/btn';
+@import './components/joinup';
+@import './components/subscribe';
 
 @import './layouts/page-header';
 @import './components/logo';
@@ -17,3 +23,4 @@
 @import './layouts/works';
 @import './layouts/team';
 @import './layouts/clients';
+@import './layouts/page-footer';

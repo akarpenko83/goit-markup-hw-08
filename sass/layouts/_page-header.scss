@@ -1,3 +1,32 @@
-@media screen and (max-width: 767px) {
-    .header {}   
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .header__container {
+            min-height: 80px;
+        }
+    .menu {
+        display: none;
+    }
+    .site-nav,
+    .contacts {
+        display: flex;
+     }
+     .contacts {
+        flex-direction: column;
+        gap: 10px;
+     }
+ }
+@media screen and (min-width: 1200px) {
+      .contacts {
+        flex-direction: row;
+        align-items: center;
+    }
 }

@@ -1,0 +1,23 @@
+.contacts {
+    display: none;
+    font-weight: 500;
+}
+.contacts__item {
+    @extend %list;
+    color: inherit;
+    transition: color 250ms cubic-bezier($cubic);
+    &:hover,
+    &:focus {
+        color: $accentColor;
+        fill: $accentColor;
+    }
+}
+.contacts__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+}
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
