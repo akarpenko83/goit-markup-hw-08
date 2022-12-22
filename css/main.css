@@ -1,15 +1,19 @@
 .container {
+  min-width: 320px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.clients__list, .team__list, .works__list, .features__list, .social, .address__list, .contacts__item, .nav__list {
+.clients__list, .team__list, .works__list, .features__list, .social, .address__list, .contacts__item, .navigation__list, .mobile-nav,
+.mobile-contacts,
+.mobile-socials {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.clients__link, .social__link, .logo__link, .address__link, .contacts__link, .nav__link {
+.clients__link, .social__link, .logo__link, .address__link, .contacts__link, .navigation__link, .mobile-socials__link, .mobile-contacts__link, .mobile-nav__link {
   text-decoration: none;
   color: inherit;
 }
@@ -67,53 +71,168 @@ img {
     width: 1170px;
   }
 }
-.site-nav {
-  display: none;
+.menu {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
 }
 
-.nav__list {
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: white;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-nav {
+  margin-bottom: 302px;
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-nav__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.02em;
+  height: 100%;
+  color: #212121;
+}
+.mobile-nav__link--active {
+  color: #2196f3;
+}
+
+.mobile-contacts__link {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+.mobile-contacts__link--phone {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-socials__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid;
+}
+
+.mobile-socials__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.navigation__list {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   gap: 50px;
 }
 
-.nav__link {
+.navigation__link {
   font-size: px;
   font-weight: 500;
   letter-spacing: 0.02em;
   height: 100%;
   padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__link:hover, .nav__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
 
-.nav__link--active {
+.navigation__link--active {
   display: flex;
   flex-direction: column;
-  padding-bottom: 0px;
   color: #2196f3;
 }
-.nav__link--active::after {
+.navigation__link--active::after {
   content: "";
   flex-grow: 1;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-}
-
-.site-nav__nav::after {
   margin-top: 28px;
 }
 
 .contacts {
-  display: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
   font-weight: 500;
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .contacts__item {
@@ -276,39 +395,17 @@ img {
   justify-content: space-evenly;
 }
 
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.page-header__container {
   min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media screen and (min-width: 768px) {
-  .header__container {
-    min-height: 80px;
-  }
-  .menu {
-    display: none;
-  }
-  .site-nav,
-.contacts {
-    display: flex;
-  }
-  .contacts {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts {
-    flex-direction: row;
-    align-items: center;
-  }
-}
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;

@@ -1,10 +1,19 @@
 .contacts {
-    display: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
     font-weight: 500;
+    @media screen and (min-width: 1200px){
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
 }
 .contacts__item {
     @extend %list;
     color: inherit;
+    // margin-bottom: 10px;
     transition: color 250ms cubic-bezier($cubic);
     &:hover,
     &:focus {

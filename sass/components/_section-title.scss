@@ -6,11 +6,12 @@
     text-align: center;
     color: $titlePrimaryColor;
 }
+
 @media screen and (min-width: 1200px) {
     .section-title {
         margin-bottom: 50px;
         font-size: 36px;
         line-height: 1.16;
     }
-    
+
 }
