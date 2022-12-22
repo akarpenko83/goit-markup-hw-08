@@ -128,13 +128,13 @@ img {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.mobile-nav {
-  margin-bottom: 302px;
 }
 
 .mobile-contacts {
@@ -156,7 +156,7 @@ img {
 .mobile-contacts__link {
   font-size: 24px;
   font-weight: 500;
-  line-height: 2;
+  line-height: 4;
   letter-spacing: 0.02em;
 }
 .mobile-contacts__link--phone {
