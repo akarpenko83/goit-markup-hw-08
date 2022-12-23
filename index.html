@@ -44,7 +44,7 @@
       <div
         class="container page-header__container"
       >
-        <div class="logo header__logo">
+        <div class="logo page-header__logo">
           <a
             class="logo__link"
             href="./index.html"
@@ -381,8 +381,17 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="./images/img0.jpg"
+                srcset="
+                ./images/team/mobile-1.jpg    450w,
+                ./images/team/mobile-1@2x.jpg 900w,
+                ./images/team/tablet-1.jpg    354w,
+                ./images/team/tablet-1@2x.jpg 708w,
+                ./images/team/desktop-1.jpg   270w,
+                ./images/team/desktop-1@2x.jpg 540w
+                "
+                src="./images/team/mobile-1.jpg"
                 alt="Ігор Дем'яненко"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
               />
               <div class="team__descr">
                 <h3 class="team__name">
@@ -472,8 +481,17 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img1.jpg"
+  srcset="
+                ./images/team/mobile-2.jpg    450w,
+                ./images/team/mobile-2@2x.jpg 900w,
+                ./images/team/tablet-2.jpg    354w,
+                ./images/team/tablet-2@2x.jpg 708w,
+                ./images/team/desktop-2.jpg   270w,
+                ./images/team/desktop-2@2x.jpg 540w
+                "
+                src="./images/team/mobile-2.jpg"
                 alt="Ольга Рєпіна"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
               />
               <div class="team__descr">
                 <h3 class="team__name">
@@ -563,8 +581,17 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img2.jpg"
+  srcset="
+                ./images/team/mobile-3.jpg    450w,
+                ./images/team/mobile-3@2x.jpg 900w,
+                ./images/team/tablet-3.jpg    354w,
+                ./images/team/tablet-3@2x.jpg 708w,
+                ./images/team/desktop-3.jpg   270w,
+                ./images/team/desktop-3@2x.jpg 540w
+                "
+                src="./images/team/mobile-3.jpg"
                 alt="Микола Тарасов"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
               />
               <div class="team__descr">
                 <h3 class="team__name">
@@ -654,8 +681,17 @@
             </li>
             <li class="team__item">
               <img
-                src="./images/img3.jpg"
+  srcset="
+                ./images/team/mobile-4.jpg    450w,
+                ./images/team/mobile-4@2x.jpg 900w,
+                ./images/team/tablet-4.jpg    354w,
+                ./images/team/tablet-4@2x.jpg 708w,
+                ./images/team/desktop-4.jpg   270w,
+                ./images/team/desktop-4@2x.jpg 540w
+                "
+                src="./images/team/mobile-4.jpg"
                 alt="Михайло Єрмаков"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"
               />
               <div class="team__descr">
                 <h3 class="team__name">
@@ -1004,7 +1040,7 @@
       </div>
     </footer>
     <!-- -------------------------- modal ----------- -->
-    <!-- <div
+    <div
       data-modal
       class="backdrop backdrop--is-hidden"
     >
@@ -1103,7 +1139,7 @@
 
           <div class="form__wrap form__policy">
             <input
-              class="form__policy-input visually-hidden"
+              class="form__policy-input"
               type="checkbox"
               name="policy"
               id="policy"
@@ -1142,7 +1178,7 @@
           Відправити
         </button>
       </div>
-    </div> -->
+    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -1,0 +1,8 @@
+.grid {
+    @extend %list;
+    @include flex();
+    gap: 30px;
+    // &__item {
+    //     flex-basis: calc(100% / 3 - $gap);
+    // }
+}

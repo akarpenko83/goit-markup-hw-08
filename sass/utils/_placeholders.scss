@@ -4,7 +4,7 @@
 
 %container {
     min-width: 320px;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -24,6 +24,18 @@
         border: 0px;
         border-radius: 4px;
         cursor: pointer;
+                transition: color 250ms cubic-bezier(var(--cubic)),
+                        background-color 250ms cubic-bezier(var(--cubic)),
+                        box-shadow 250ms cubic-bezier(var(--cubic));
+                
+                    &:hover,
+                    &:focus {
+                        color: $btnTxtColor;
+                        background-color: $accentColor;
+                        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                            0px 1px 2px rgba(0, 0, 0, 0.08),
+                            0px 2px 2px rgba(0, 0, 0, 0.12);
+                    }
     }
 %visually-hidden {
     position: absolute;

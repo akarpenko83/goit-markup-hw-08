@@ -1,0 +1,67 @@
+.modal {
+    @include flex(flex,column);
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: $bgdPrimaryColor;
+    transition: 
+    transform 250ms cubic-bezier($cubic);
+    &:focus-within .btn-close__icon {
+            fill: $accentColor;
+        }
+}
+.modal__header {
+    @include font(20,700,1.15,null);
+    margin-bottom: 12px;
+    color: $titlePrimaryColor;
+    text-align: center;
+}
+.btn-close {
+    position: absolute;
+    @include flex();
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.btn-close__icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier($cubic);
+}
+.subscribe__btn {
+    @extend %btn;
+    @include flex (inline-flex, null, null, null, center, center);
+    @include font(16, 700, 1.875, 0.06);
+    height: 50px;
+    width: 200px;
+    padding: 10px 28px;
+    color: $bgdPrimaryColor;
+    fill: currentColor;
+    background-color: $accentColor;
+}
+.subscribe__btn--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe__icon {
+    margin-left: 10px;
+}

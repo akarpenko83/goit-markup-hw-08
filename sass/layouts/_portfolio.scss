@@ -1,0 +1,30 @@
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.fltr-list {
+    @extend %list;
+    @include flex();
+    margin-bottom: 50px;
+    gap: 8px;
+}
+.fltr-list__btn {
+    @extend %btn;
+    @include font(16,500,1.6,null);
+    padding: 6px 22px;
+    &--active {
+            padding: 6px 22px;
+            color: $btnTxtColor;
+            background-color: $accentColor;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+            transition: none;
+        }
+}
+
+
+
+
+
+

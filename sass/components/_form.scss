@@ -1,0 +1,86 @@
+.form {
+width: 100%;
+}
+
+.form__label {
+    @include font(12);
+    margin-bottom: 4px;
+}
+.form__wrap {
+    position: relative;
+    margin-bottom: 10px;
+    display: block;
+    color: $btnTxtSecondaryColor;
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.form__input {
+    height: 40px;
+    width: 100%;
+    fill: currentColor;
+    padding: 12px 16px 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier($cubic),
+        outline-color 250ms cubic-bezier($cubic);
+
+    &:focus {
+        border-color: $accentColor;
+        outline-color: $accentColor;
+    }
+    &:focus+.form__icon {
+        color: $accentColor;
+    }
+}
+.form__icon {
+    transition: color 250ms cubic-bezier($cubic);
+    fill: currentColor;
+}
+.form__comment {
+    height: 120px;
+    resize: none;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    &::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+        }
+}
+// ----------------- policy --------------
+.form__policy {
+    margin-bottom: 40px;
+}
+.form__policy-label {
+    position: relative;
+    @include flex(flex,null,null,null,null,space-evenly);
+    color: $txtPrimaryColor;
+}
+.form__policy-chkbox {
+    @include flex();
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+}
+
+.form__policy-icon {
+    fill: transparent;
+}
+.form__policy-input {
+  @extend %visually-hidden;
+}
+.form__policy-input:checked+label>span {
+    border: none;
+    border-radius: 2px;
+    background-color: $accentColor;
+}
+.form__policy-input:checked+label>span>svg {
+    fill: $bgdPrimaryColor;
+}
+.form__policy-link {
+    color: $accentColor;
+}

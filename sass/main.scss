@@ -1,12 +1,15 @@
+@import './utils/variables';
 @import './utils/mixins';
 @import './utils/placeholders';
-@import './utils/variables';
+
 
 @import './base/common';
 
 
 @import './components/container';
 @import './components/menu';
+@import './components/backdrop';
+@import './components/form';
 @import './components/mobile-menu';
 @import './components/site-nav';
 @import './components/contacts';
@@ -17,6 +20,10 @@
 @import './components/btn';
 @import './components/joinup';
 @import './components/subscribe';
+@import './components/grid';
+@import './components/card';
+@import './components/modal';
+
 
 
 @import './layouts/page-header';
@@ -26,4 +33,5 @@
 @import './layouts/works';
 @import './layouts/team';
 @import './layouts/clients';
+@import './layouts/portfolio';
 @import './layouts/page-footer';
