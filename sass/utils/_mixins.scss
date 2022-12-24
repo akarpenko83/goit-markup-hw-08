@@ -1,14 +1,18 @@
-@mixin font($fs: 14,
+@mixin font
+(
+    $fs: 14,
     $fw: 400,
     $lh: 1.2,
-    $ls: 0.03) {
+    $ls: 0.03
+    ) {
     font-size: $fs + px;
     font-weight: $fw;
     line-height: $lh;
     letter-spacing: $ls + em;
 }
 
-@mixin flex($flx: flex,
+@mixin flex(
+    $flx: flex,
     $fd: row,
     $fw: wrap,
     $ac: normal,
@@ -20,4 +24,30 @@
     align-content: $ac;
     align-items: $ai;
     justify-content: $jc;
+}
+@mixin tel {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin retina {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
 }

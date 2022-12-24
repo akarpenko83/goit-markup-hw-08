@@ -400,7 +400,7 @@ img {
 }
 
 .address__link--white {
-  color: white;
+  color: #FFFFFF;
 }
 
 .logo {
@@ -726,26 +726,26 @@ img {
   background-position: center;
   background-size: cover;
 }
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@2x.jpg);
-  }
-}
 @media screen and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768@2x.jpg);
-  }
-}
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hero {
     padding: 200px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768@2x.jpg);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -766,7 +766,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 @media screen and (min-width: 768px) {
   .hero__title {
     max-width: 360px;
@@ -779,6 +778,7 @@ img {
     max-width: 696px;
   }
 }
+
 .features {
   padding: 60px 0;
 }

@@ -11,21 +11,25 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    @include tel {
+        background-image: 
+            linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-768.jpg);
+            
+    }
+    @include tablet {
+        padding: 200px 0px;
+        background-image: 
+            linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero-1600.jpg);
+    }
+    @include retina {
+        background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
         url(../images/hero/hero-480@2x.jpg);
-  }
-}
-@media screen and (min-width: 480px) {
-    .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-768.jpg);
     }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
@@ -36,14 +40,6 @@
             rgba(47, 48, 58, 0.4)),
         url(../images/hero/hero-768@2x.jpg);
     }
-}
-@media screen and (min-width: 769px) {
-    .hero {
-        padding: 200px 0px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-1600.jpg);
-    }  
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -66,16 +62,12 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $heroPrimaryColor;
-}
-@media screen and (min-width: 768px) {
-    .hero__title {
+    @include tablet {
         max-width: 360px;
     }
-}
-@media screen and (min-width: 1200px){
-    .hero__title {
-            font-size: 44px;
-            line-height: 1.36;
-            max-width: 696px;
-        }
+    @include desktop {  
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
 }

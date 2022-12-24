@@ -2,7 +2,7 @@
     text-decoration: none;
     font-style: normal;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+    color: $addrSecondaryColor;
 }
 .address__list {
     @extend %list;
@@ -11,5 +11,5 @@
     @extend %link;
 }
 .address__link--white {
-    color: white;
+    color: $addrPrimaryColor;
 }
