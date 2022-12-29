@@ -2,7 +2,19 @@
     @extend %list;
     @include flex();
     gap: 30px;
-    // &__item {
-    //     flex-basis: calc(100% / 3 - $gap);
-    // }
+    @media screen and (min-width: 768px) {
+        justify-content: flex-start;   
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
+}
+.grid__item {
+        @media screen and (min-width: 768px) {
+                flex-basis: calc(100% / 2 - $gap / 2);
+        }
+        @media screen and (min-width: 1200px) {
+
+            flex-basis: calc(100% / 3 - 20px);
+        }
 }

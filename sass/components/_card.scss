@@ -30,6 +30,11 @@
 .product__footer {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
+    height: 110px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 146px;
+        
+    }
 }
 
 .product__name {

@@ -70,7 +70,6 @@ img {
 .container {
   width: 100%;
 }
-
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
@@ -86,6 +85,7 @@ img {
     width: 1200px;
   }
 }
+
 .menu {
   display: flex;
   flex-grow: 1;
@@ -93,12 +93,12 @@ img {
   justify-content: space-between;
   height: 80px;
 }
-
 @media (max-width: 767px) {
   .menu {
     display: none;
   }
 }
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -112,12 +112,12 @@ img {
   border-radius: 50%;
   outline: none;
 }
-
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
+
 .backdrop {
   position: fixed;
   opacity: 1;
@@ -426,7 +426,6 @@ img {
   text-align: center;
   color: #212121;
 }
-
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
@@ -434,6 +433,7 @@ img {
     line-height: 1.16;
   }
 }
+
 .social {
   display: flex;
   align-items: center;
@@ -542,6 +542,27 @@ img {
   justify-content: center;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .grid {
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid__item {
+    flex-basis: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid__item {
+    flex-basis: calc(33.3333333333% - 20px);
+  }
+}
 
 .product {
   cursor: pointer;
@@ -578,6 +599,12 @@ img {
 .product__footer {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  height: 110px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product__footer {
+    height: 146px;
+  }
 }
 
 .product__name {
@@ -742,7 +769,6 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@2x.jpg);
   }
 }
-
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768@2x.jpg);
@@ -754,6 +780,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600@2x.jpg);
   }
 }
+
 .hero__title {
   margin-left: auto;
   margin-right: auto;
@@ -782,16 +809,15 @@ img {
 .features {
   padding: 60px 0;
 }
-
 @media screen and (min-width: 1200px) {
   .features {
     padding: 94px 0;
   }
 }
+
 .features__list {
   align-items: baseline;
 }
-
 @media screen and (min-width: 768px) {
   .features__list {
     display: flex;
@@ -804,6 +830,7 @@ img {
     flex-wrap: nowrap;
   }
 }
+
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -833,7 +860,6 @@ img {
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-
 @media screen and (min-width: 480px) {
   .features__icon {
     display: flex;
@@ -843,6 +869,7 @@ img {
     width: 100%;
   }
 }
+
 .features__subtitle {
   margin-bottom: 10px;
   text-align: center;
@@ -861,13 +888,13 @@ img {
 .works {
   display: none;
 }
-
 @media screen and (min-width: 1200px) {
   .works {
     display: flex;
     padding-bottom: 94px;
   }
 }
+
 .works__list {
   display: flex;
   justify-content: space-between;
@@ -904,16 +931,15 @@ img {
 .team__section-title {
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 1200px) {
   .team__section-title {
     margin-bottom: 50px;
   }
 }
+
 .team__list {
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
@@ -926,6 +952,7 @@ img {
     flex-wrap: nowrap;
   }
 }
+
 .team__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -934,7 +961,6 @@ img {
 .team__item:not(:last-child) {
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 768px) {
   .team__item {
     display: flex;
@@ -945,6 +971,7 @@ img {
     margin-bottom: 0px;
   }
 }
+
 .team__descr {
   display: flex;
   flex-direction: column;
@@ -969,12 +996,12 @@ img {
 .clients {
   padding: 60px 0;
 }
-
 @media screen and (min-width: 1200px) {
   .clients {
     padding: 94px 0;
   }
 }
+
 @media screen and (min-width: 480px) {
   .clients__list {
     display: flex;
@@ -988,13 +1015,13 @@ img {
     flex-wrap: nowrap;
   }
 }
+
 .clients__item {
   height: 92px;
 }
 .clients__item:not(:last-child) {
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 480px) {
   .clients__item {
     flex-wrap: wrap;
@@ -1011,6 +1038,7 @@ img {
     flex-basis: calc(33.3333333333% - 30px);
   }
 }
+
 .clients__link {
   display: flex;
   justify-content: center;
@@ -1033,19 +1061,39 @@ img {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .fltr-list {
+  max-width: 75vw;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-content: normal;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .fltr-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: normal;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fltr-list {
+    margin-bottom: 54px;
+  }
 }
 
 .fltr-list__btn {

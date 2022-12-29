@@ -4,12 +4,9 @@
     align-items: center;
     justify-content: space-between;
     height: 80px;
-}
-
-@media (max-width: 767px) {
-    .menu {
-        display: none;
-    }
+    @media (max-width: 767px) {
+            display: none;
+        }
 }
 .menu-toggle {
     min-height: 40px;
@@ -24,10 +21,10 @@
     border: none;
     border-radius: 50%;
     outline: none;
+    @media (min-width: 768px) {
+        display: none;
+        }
 }
 
-@media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
-}
+
+

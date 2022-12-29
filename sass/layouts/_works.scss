@@ -1,11 +1,9 @@
 .works {
     display: none;
-}
-@media screen and (min-width: 1200px) {
-.works {
-    display: flex;
-    padding-bottom: 94px;
-}
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            padding-bottom: 94px;
+        }
 }
 .works__list {
     @extend %list;

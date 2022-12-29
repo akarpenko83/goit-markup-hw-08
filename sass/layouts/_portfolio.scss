@@ -1,12 +1,26 @@
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .fltr-list {
     @extend %list;
-    @include flex();
-    margin-bottom: 50px;
+    max-width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
     gap: 8px;
+    @media screen and (min-width: 768px) {
+        @include flex;
+        max-width: 100%;
+        margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 54px;
+    }
 }
 .fltr-list__btn {
     @extend %btn;
